@@ -1,116 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
+
 <head>
-
-  <!-- Basic Page Needs
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta charset="utf-8">
-  <title>Skeleton: Responsive CSS Boilerplate</title>
-  <meta name="description" content="">
-  <meta name="author" content="">
-
-  <!-- Mobile Specific Metas
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- FONT
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href='//fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
-
-  <!-- CSS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="dist/css/normalize.css">
-  <link rel="stylesheet" href="dist/css/skeleton.css">
-  <link rel="stylesheet" href="css/custom.css">
-
-  <!-- Scripts
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-  <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
-  <link rel="stylesheet" href="css/github-prettify-theme.css">
-  <script src="js/site.js"></script>
-
-  <!-- Favicon
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="dist/images/favicon.png">
-
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Document </title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
 </head>
-<body class="code-snippets-visible">
 
-    <!-- Primary Page Layout
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <div class="container">
-        <section class="header">
-        <h2 class="title">白脇SSS</h2>
-        </section>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="header__inner">
+        <h1 class="header__title header-title">
+          <a href="#">
+            <img src="images/logo.png" alt="ロゴ画像">
+          </a>
+        </h1>
 
-        <nav class="navbar">
-            <ul class="navbar-list">
-            <li class="navbar-item"><a class="navbar-link" href="#calendar">CALENDAR</a></li>
-            <li class="navbar-item"><a class="navbar-link" href="#ivent">IVENT</a></li>
-            <li class="navbar-item"><a class="navbar-link" href="#forms">FORM</a></li>
-            </ul>
+        <nav class="header__nav nav" id="js-nav">
+          <ul class="nav__items nav-items">
+            <li class="nav-items__item"><a href="#calendar">CALENDAR</a></li>
+            <li class="nav-items__item"><a href="#ivent">IVENT</a></li>
+            <li class="nav-items__item"><a href="#form">FORM</a></li>
+          </ul>
         </nav>
 
-    <!-- CALENDAR ————————————————————————————————————————————————————— -->
+        <button class="header__hamburger hamburger" id="js-hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+    <main>
+      <div class="main">
         <div class="docs-section" id="calendar">
-            <h6 class="docs-header">Calendar</h6>
-            <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=Asia%2FTokyo&bgcolor=%23e3fff7&showTitle=0&showPrint=0&showCalendars=0&src=c2hpcmF3YWtpc0BnbWFpbC5jb20&src=ZW4uamFwYW5lc2UjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23039BE5&color=%230B8043" style="border-width:0" width="600" height="600" frameborder="0" scrolling="no"></iframe>
+          <h1>CALENDAR</h1>
+          <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=Asia%2FTokyo&bgcolor=%23ffffff&showTitle=0&hl=ja&showTz=0&showPrint=0&showCalendars=0&src=c2hpcmF3YWtpc0BnbWFpbC5jb20&src=ZW4uamFwYW5lc2UjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23039BE5&color=%230B8043" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
         </div>
-    <!-- IVENT ————————————————————————————————————————————————————— -->
-    <div class="docs-section" id="ivent">
-        <h6 class="docs-header">ivent</h6>
-        
-    </div>
-    <!-- FORM ————————————————————————————————————————————————————— -->
-        <div class="docs-section" id="forms">
-            <h6 class="docs-header">Form</h6>
-            <p>Forms are a huge pain, but hopefully these styles make it a bit easier. All inputs, select, and buttons are normalized for a common height cross-browser so inputs can be stacked or placed alongside each other.</p>
-            <div class="docs-example docs-example-forms">
-              <form>
-                <div class="row">
-                  <div class="six columns">
-                    <label for="exampleEmailInput">Your email</label>
-                    <input class="u-full-width" type="email" placeholder="test@mailbox.com" id="exampleEmailInput">
-                  </div>
-                  <div class="six columns">
-                    <label for="exampleRecipientInput">Reason for contacting</label>
-                    <select class="u-full-width" id="exampleRecipientInput">
-                      <option value="Option 1">Questions</option>
-                      <option value="Option 2">Admiration</option>
-                      <option value="Option 3">Can I get your number?</option>
-                    </select>
-                  </div>
-                </div>
-                <label for="exampleMessage">Message</label>
-                <textarea class="u-full-width" placeholder="Hi Dave &hellip;" id="exampleMessage"></textarea>
-                <label class="example-send-yourself-copy">
-                  <input type="checkbox">
-                  <span class="label-body">Send a copy to yourself</span>
-                </label>
-                <input class="button-primary" type="submit" value="Submit">
-              </form>
-            </div>
+        <div class="docs-section" id="ivent">
+          <h1>IVENT</h1>
         </div>
-    <!-- ————————————————————————————————————————————————————— -->
-    </div>
-
-  <!-- Google Analytics -->
-  <script type="text/javascript">
-
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-33397759-1']);
-    _gaq.push(['_trackPageview']);
-
-    (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-
-  </script>
-
-<!-- End Document
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <div class="docs-section" id="form">
+          <h1>FORM</h1>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div>
+        フッターエリア
+      </div>
+    </footer>
+  </div>
+  <script src="main.js"></script>
 </body>
+
 </html>
